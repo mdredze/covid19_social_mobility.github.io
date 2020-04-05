@@ -22,7 +22,7 @@ Professor David Broniatowski is an Associate Professor in the Department of Engi
 ### [Mark Dredze](http://www.dredze.com)
 Professor Mark Dredze is the John C Malone Associate Professor of Computer Science at Johns Hopkins University.
 
-### Paiheng Xu
+### [Paiheng Xu](paihengxu.github.io)
 Paiheng Xu is a masters student at Johns Hopkins University.
 
 
