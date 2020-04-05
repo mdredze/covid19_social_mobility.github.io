@@ -24,4 +24,4 @@ sources.
 - [Understanding the Impact of COVID-19 Policy Change
 in the Greater Seattle Area using Mobility Data](https://covid.idmod.org/data/Understanding_impact_of_COVID_policy_change_Seattle.pdf)
 
-*An analysis of 
+*An analysis of social mobility practices in the Greater Seattle area using data from Facebook.*
