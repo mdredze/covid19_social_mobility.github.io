@@ -17,7 +17,7 @@ sources.
 
 *Community Mobility Reports aim to provide insights into what has changed in response to policies aimed at combating COVID-19.*
 
-- [Where America Did't Stay Home Even as the Virus Spread](https://www.nytimes.com/interactive/2020/04/02/us/coronavirus-social-distancing.html)
+- [Where America Didn't Stay Home Even as the Virus Spread](https://www.nytimes.com/interactive/2020/04/02/us/coronavirus-social-distancing.html)
 
 *New York Times (April 2, 2020)*
 
