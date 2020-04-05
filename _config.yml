@@ -25,6 +25,7 @@ navbar-links:
   Analysis: "analysis"
   Download: "download"
   Paper: "http://arxiv.org"
+  Related Projects: "related"
   
 #  Resources:
 #    - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
