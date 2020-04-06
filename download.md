@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Downloads
+title: Download
 subtitle: 
 ---
 We release the raw numbers behind our analysis. For each data release we will post two files:
