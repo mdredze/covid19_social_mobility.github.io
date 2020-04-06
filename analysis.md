@@ -1,36 +1,31 @@
 ---
 layout: page
-title: Social Mobility Index Analysis
+title: Analysis
 subtitle: 
 ---
 
-### Computing Mobility
-We present the Twitter Social Mobility Index, a measure of social distancing and travel derived from Twitter data. 
-We use public geolocated Twitter data to measure how much a user travels in a given week.
+## Computing Mobility
+The Twitter Social Mobility Index is a measure of social distancing and travel derived from Twitter data. We use public geolocated Twitter data to measure how much a user travels in a given week.
 We compute the standard deviation of Twitter geolocated tweets per week, 
 and aggregate the data over an entire population to produce a metric for the US as a whole and for individual states and cities.
 
-### Findings
-* From the mobility reduction table:
-    * The overall drop in mo-bility across the United States was large: 48.77%.
-    * Every US state and territory saw a drop in mobility, ranging from 21.54\% to 63.13\% travel compared to numbers before March 16, 2020. 
-        However, the variance by state was high. 
-        States that were early adopters of social distancing practices are ranked highly on the reduction in travel: e.g. Washington (3) and Maryland (5). 
-        In contrast, the eight states that do not currently have state wide orders rank poorly: 
-        Arkansas (37), Iowa (50), Nebraska (29), North Dakota (13), South Carolina (34), South Dakota (39), Oklahoma (52), Utah (17),
-    * The ranking is consistent with some of the other resource on social mobility. 
-        For example, DC (1) is also in the top tier of social distancing according to [unacast](https://www.unacast.com/covid19/social-distancing-scoreboard).
-* From the plots: (coming soon)
-    * The Weekly social mobility index plot reflects a massive drop in mobility starting in March, 
-    with the two most recent weeks the lowest on record in our dataset.
-    * The user distribution plot suggests, while mobility is reduced in general, 
-    some users are still showing a lot of movement, 
-    suggesting that social distancing is not being uniformly practiced.
+You can find a complete description of our method and results [in our paper](paper/twitter_social_mobility.pdf).
+
+## Results
+The highlights of our study find that:
+
+* Since the start of social distancing on March 16, 2020 mobility in the United States has dropped 48.77%.
+    
+* Every US state and territory has reduced mobility, though the variance by state is high.
+
+* States that were early adopters of social distancing practices have larger reductions in travel. The eight states that do not currently (April 5, 2020) have state wide orders rank lower: Arkansas (37), Iowa (50), Nebraska (29), North Dakota (13), South Carolina (34), South Dakota (39), Oklahoma (52), Utah (17),
+
+* The last two weeks of March have the lowest mobility of any week since January 1, 2019.
+
  
-### Mobility Reduction Table
-The following table  shows the Twitter Social Mobility Index measured in kilometers for 
+## Mobility Reduction by State
+This table shows the Twitter Social Mobility Index measured in kilometers for 
 every state and territory in United States, New York City, and United States as a whole. 
-We also include the rank of each state or territory.
 
 |    ﻿Location   | Mobility from January 1, 2019 to March 15, 2020 | Mobility in March 16 - March 29, 2020 | Mobility Reduction | Rank |
 |:-------------:|:-----------------------------------------------:|:-------------------------------------:|:------------------:|:----:|
@@ -89,15 +84,4 @@ We also include the rank of each state or territory.
 |       WY      |                      53.10                      |                 41.66                 |       21.54%       |  53  |
 | United States |                      49.81                      |                 25.52                 |       48.77%       |  -   |
 | New York City |                      63.98                      |                 31.25                 |       51.16%       |  -   |
-
-### Graphics
-Coming soon...
-* Weekly social mobility index. 
-    * This figure shows the weekly social mobility index for the United States for the entire time period of our dataset.
-* User  distribution  of  mean  social  mobilityindex  (KM)  before/after  social  distancing
-    * This figure shows a box-plot of the mobility variance across all user in a given time period.
-
-### Link to paper and data
-Please refer to our [paper](paper/twitter_social_mobility.pdf) and [data](download.md) for detailed information.
-
 
