@@ -1,10 +1,9 @@
 ---
 layout: page
-title: Related Project
+title: Related Projects
 subtitle: 
 ---
 
-<h1 class='#top'> Related Projects </h1>
 
 Several other projects seek to measure social mobility using a variety of online data
 sources.

@@ -1,10 +1,10 @@
 ---
 layout: page
-title: About
+title: About Us
 subtitle: 
 ---
 
-# About Us
+
 We are a team of academic researchers who utilize web and social media data to study public health. We develop novel natural language processing and machine learning models
 and apply them to social media datasets.
 
