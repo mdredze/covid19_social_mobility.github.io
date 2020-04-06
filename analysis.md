@@ -85,3 +85,11 @@ every state and territory in United States, New York City, and United States as 
 | United States |                      49.81                      |                 25.52                 |       48.77%       |  -   |
 | New York City |                      63.98                      |                 31.25                 |       51.16%       |  -   |
 
+Here is a visualization of the table.
+
+![](figures/bar_graph.png)
+
+This figure shows the weekly social mobility index for Washington, DC (1), Wycoming (53) and the United States 
+since January 6, 2020.
+
+![](figures/line_graph.png)
