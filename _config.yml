@@ -24,7 +24,7 @@ navbar-links:
   About: "about"
   Analysis: "analysis"
   Download: "download"
-  Paper: "paper/twitter_social_mobility.pdf"
+  Paper: "https://arxiv.org/abs/2004.02397"
   Related Projects: "related"
   
 #  Resources:
