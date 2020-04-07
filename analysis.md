@@ -9,7 +9,7 @@ The Twitter Social Mobility Index is a measure of social distancing and travel d
 We compute the standard deviation of Twitter geolocated tweets per week, 
 and aggregate the data over an entire population to produce a metric for the US as a whole and for individual states and cities.
 
-You can find a complete description of our method and results [in our paper](paper/twitter_social_mobility.pdf).
+You can find a complete description of our method and results [in our paper](https://arxiv.org/abs/2004.02397).
 
 ## Results
 The highlights of our study find that:
