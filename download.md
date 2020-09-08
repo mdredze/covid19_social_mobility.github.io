@@ -31,14 +31,14 @@ This file contains the social mobility index for every location for each week st
 
 ## Data Files
 
-- [social_mobility_index.state_data.20200830.csv](data/social_mobility_index.state_data.20200830.csv)
+- [social_mobility_index.state_data.20200906.csv](data/social_mobility_index.state_data.20200906.csv)
 
-- [social_mobility_index.longitudinal.state.20200830.csv](data/social_mobility_index.longitudinal.state.20200830.csv)
+- [social_mobility_index.longitudinal.state.20200906.csv](data/social_mobility_index.longitudinal.state.20200906.csv)
 
 We also present the mobility data for the [100 most populous United States cities](https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population).
  
-- [social_mobility_index.city_data.20200830.csv](data/social_mobility_index.city_data.20200830.csv)
+- [social_mobility_index.city_data.20200906.csv](data/social_mobility_index.city_data.20200906.csv)
 
-- [social_mobility_index.longitudinal.city.20200830.csv](data/social_mobility_index.longitudinal.city.20200830.csv)
+- [social_mobility_index.longitudinal.city.20200906.csv](data/social_mobility_index.longitudinal.city.20200906.csv)
 
 Historical data: [here](https://github.com/mdredze/covid19_social_mobility.github.io/tree/master/data)
