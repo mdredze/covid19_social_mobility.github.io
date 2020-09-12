@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <title>COVID-19 Social Mobility</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="./style/data.css">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-md navbar-fixed-top">
+    <a class="navbar-brand" href="https://covid19dataresources.org">COVID-19 Data Resources</a>
+    <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="main-navigation">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">Project</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="analysis.html">Analysis</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="data.html">Data</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="relatedproj.html">Related Projects</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="wrapper">
+
+    <div class="row">
+      <div class="column1">
+        <h1>Social Mobility Reduction Data</h1>
+        <p>TEMP: write something about the paper:
+          We release the raw numbers behind our analysis. <br>
+          For each data release we will post four files: index and longitudinal data for cities and states.
+        </p>
+
+        <a href="https://arxiv.org/abs/2004.02397">
+          <img alt="Paiheng Xu Paper" src="./style/paper-ss.png" width="90%" height="35%">
+        </a>
+
+        <h2>Overall Index Data</h2>
+        <p>This file contains the current social mobility index for each US state and territory. The columns are:
+          <ul class="datalist">
+            <li><span class="variable">location</span> The US state, city, or territory and the US as a whole. We included every state, 100 most populated cities in the US, and the 2 territories (Puerto Rico and Virgin Islands). We will add new ones
+              over time.</li>
+            <li><span class="variable">mobility_before_distancing</span> The social mobility index for the entire time period of the dataset, from January 1, 2019 up to the date before social distancing, March 15, 2020.</li>
+            <li><span class="variable">mobility_after_distancing</span> The social mobility index since March 16, 2020. Note that social distancing started at different times for different states, but we don't the include state-varied analysis in
+              this data.</li>
+            <li><span class="variable">reduction</span> The percent reduction of social mobility. This is computed as <br><span class="variable">1 - mobility_after_distancing / mobility_before_distancing</span>.</li>
+            <li><span class="variable">num_users</span> The number of unique Twitter users that were used to compute for this location.</li>
+            <li><span class="variable">num_records</span> The number of unique tweets used to compute for this location.</li>
+          </ul>
+        </p>
+
+        <h2>Longitudinal Data with Weekly Measurements</h2>
+        <p>This file contains the social mobility index for every location for each week starting in January 1, 2019.
+          This data is available for every US state, 100 most populated cities, 5 regions
+          (Northeast, Midwest, South, Central, West), and 2 territories (Puerto Rico and Virgin Islands).</p>
+      </div>
+
+      <div class="column2">
+        <h4> Download </h4>
+        <a href="https://arxiv.org/abs/2004.02397" target="_blank">Paper</a>
+        <button class="dropdown-btn">Latest Data - All
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+          <a href="https://raw.githubusercontent.com/mdredze/covid19_twitter_data_new.github.io/master/data/index_compiled.csv" target="_blank">
+            <i class="fa fa-download" aria-hidden="true"></i> index_compiled.csv
+          </a>
+          <a href="https://raw.githubusercontent.com/mdredze/covid19_twitter_data_new.github.io/master/data/longitudinal_compiled.csv" target="_blank">
+            <i class="fa fa-download" aria-hidden="true"></i> longitudinal_compiled.csv
+          </a>
+        </div>
+        <button class="dropdown-btn">Latest Data - State
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+          <a href="https://raw.githubusercontent.com/mdredze/covid19_twitter_data_new.github.io/master/data/index_state_latest.csv" target="_blank">
+            <i class="fa fa-download" aria-hidden="true"></i> index_state.csv
+          </a>
+          <a href="https://raw.githubusercontent.com/mdredze/covid19_twitter_data_new.github.io/master/data/longitudinal_state_latest.csv" target="_blank">
+            <i class="fa fa-download" aria-hidden="true"></i> longitudinal_state.csv
+          </a>
+        </div>
+        <button class="dropdown-btn">Latest Data - City
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+          <a href="https://raw.githubusercontent.com/mdredze/covid19_twitter_data_new.github.io/master/data/index_city_latest.csv" target="_blank">
+            <i class="fa fa-download" aria-hidden="true"></i> index_city.csv
+          </a>
+          <a href="https://raw.githubusercontent.com/mdredze/covid19_twitter_data_new.github.io/master/data/longitudinal_city_latest.csv" target="_blank">
+            <i class="fa fa-download" aria-hidden="true"></i> longitudinal_city.csv
+          </a>
+        </div>
+        <a href="https://github.com/mdredze/covid19_twitter_data_new.github.io/tree/master/data" target="_blank">
+        Archived data</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="./script/data.js"></script>
+</body>
+<footer class="page-footer">
+  <div class="footer-img row">
+    <a href="mailto:mdredze@cs.jhu.edu">
+      <img border="0" alt="Email" src="./style/email.png" width="50" height="50"></a>
+    <a href="https://www.twitter.com/mdredze">
+      <img border="0" alt="Twitter" src="./style/twitter.png" width="50" height="50"></a>
+    <a href="http://www.socialmediaforpublichealth.org/covid-19/">
+      <img border="0" alt="Website" src="./style/website.png" width="50" height="50"></a>
+  </div>
+  <div class="footer-copyright text-center">© 2020 Copyright: covid19dataresources.org</div>
+</footer>
+
+</html>
