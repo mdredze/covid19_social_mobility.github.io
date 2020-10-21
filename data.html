@@ -44,17 +44,21 @@
 
     <div class="row">
       <div class="column1">
-        <h1>Social Mobility Reduction Data</h1>
-        <p>TEMP: write something about the paper:
-          We release the raw numbers behind our analysis. <br>
-          For each data release we will post four files: index and longitudinal data for cities and states.
+        <h1>Social Mobility Data</h1>
+        <p> We have two sources of data regarding social mobility on Twitter. <br>
+          One is from our paper on Twitter social mobility Index. We release the raw numbers behind our analysis.
+          For each data release we will post four files: index and longitudinal data for cities and states. <br>
+          The other is from our paper on social distancing status from Twitter.
+          We release the anonymized dataset that we used to study who may be social distancing
+          and what factors correlate with this practice.
         </p>
 
-        <a href="https://arxiv.org/abs/2004.02397">
-          <img alt="Paiheng Xu Paper" src="./style/paper-ss.png" width="90%" height="35%">
-        </a>
+<!--        <a href="https://arxiv.org/abs/2004.02397">-->
+<!--          <img alt="Paiheng Xu Paper" src="./style/paper-ss.png" width="90%" height="35%">-->
+<!--        </a>-->
 
-        <h2>Overall Index Data</h2>
+        <h2>Social Mobility Index Data</h2>
+        <h3>Overall Index Data</h3>
         <p>This file contains the current social mobility index for each US state and territory. The columns are:
           <ul class="datalist">
             <li><span class="variable">location</span> The US state, city, or territory and the US as a whole. We included every state, 100 most populated cities in the US, and the 2 territories (Puerto Rico and Virgin Islands). We will add new ones
@@ -68,15 +72,22 @@
           </ul>
         </p>
 
-        <h2>Longitudinal Data with Weekly Measurements</h2>
+        <h3>Longitudinal Data with Weekly Measurements</h3>
         <p>This file contains the social mobility index for every location for each week starting in January 1, 2019.
           This data is available for every US state, 100 most populated cities, 5 regions
           (Northeast, Midwest, South, Central, West), and 2 territories (Puerto Rico and Virgin Islands).</p>
+
+        <h2>Social Distancing Data</h2>
+        <p>This dataset includes demographics (race/ethnicity, gender, and age), location, political affiliation, COVID19 and social distancing hashtag mentions
+        and weekly social mobility index for each anonymized Twitter user.
+          The details of this dataset can be found <a href="papers" target="_blank"> here </a>.</p>
       </div>
 
       <div class="column2">
         <h4> Download </h4>
-        <a href="https://preprints.jmir.org/preprint/21499/accepted" target="_blank">Paper</a>
+        <a href="https://preprints.jmir.org/preprint/21499/accepted" target="_blank">Social Mobility Index Paper</a>
+        <a href="papers/Twitter_Detects_Who_is_Social_Distancing_During_COVID-19_preprint.pdf" target="_blank">Social Distancing Paper</a>
+        <a href="https://drive.google.com/file/d/1ppYNbrqVuxQe0BXj8AoMtbtnIEPdPS9F/view?usp=sharing" target="_blank">Social Distancing Data</a>
         <button class="dropdown-btn">Latest Data - All
           <i class="fa fa-caret-down"></i>
         </button>
