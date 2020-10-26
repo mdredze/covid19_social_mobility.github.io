@@ -45,49 +45,49 @@
     <div class="row">
       <div class="column1">
         <h1>Social Mobility Data</h1>
-        <p> We have two sources of data regarding social mobility on Twitter. <br>
-          One is from our paper on Twitter social mobility Index. We release the raw numbers behind our analysis.
-          For each data release we will post four files: index and longitudinal data for cities and states. <br>
-          The other is from our paper on social distancing status from Twitter.
-          We release the anonymized dataset that we used to study who may be social distancing
-          and what factors correlate with this practice.
+        <h2>Publications</h2>
+        <p>In support of research we release our weekly aggregated social mobility data.
+          Each data release includes the current index and longitudinal data for cities, states and the United States.
+          We also have anonymized user level mobility data available upon request. Email <a href="http://www.cs.jhu.edu/~mdredze/">Mark Dredze</a> for details.
+        </p>
+        <p>
+		Our metric is described in our journal publication:<br>
+		Paiheng Xu, Mark Dredze, David A Broniatowski. <a href="https://doi.org/10.2196/21499">The Twitter Social Mobility Index: Measuring Social Distancing Practices from Geolocated Tweets</a>. Journal of Medical Internet Research (JMIR), 2020.
+
+		<br><br>
+		An earlier version of our work can be found in an Arxiv Preprint:<br>
+          Paiheng Xu, Mark Dredze, David A. Broniatowski. <a href="https://arxiv.org/abs/2004.02397">The Twitter Social Mobility Index: Measuring Social Distancing Practices from Geolocated Tweets.</a> arXiv:2004.02397, 2020.
         </p>
 
-<!--        <a href="https://arxiv.org/abs/2004.02397">-->
-<!--          <img alt="Paiheng Xu Paper" src="./style/paper-ss.png" width="90%" height="35%">-->
-<!--        </a>-->
 
-        <h2>Social Mobility Index Data</h2>
-        <h3>Overall Index Data</h3>
-        <p>This file contains the current social mobility index for each US state and territory. The columns are:
+        <h2>Overall Index Data</h2>
+        <p>The index data file (for each location type) contains the current social mobility index. The columns are:
           <ul class="datalist">
-            <li><span class="variable">location</span> The US state, city, or territory and the US as a whole. We included every state, 100 most populated cities in the US, and the 2 territories (Puerto Rico and Virgin Islands). We will add new ones
-              over time.</li>
+            <li><span class="variable">location</span> The US state, city, or territory and the US as a whole. We include every state, 100 most populous cities in the US, and 2 territories (Puerto Rico and Virgin Islands).</li>
             <li><span class="variable">mobility_before_distancing</span> The social mobility index for the entire time period of the dataset, from January 1, 2019 up to the date before social distancing, March 15, 2020.</li>
-            <li><span class="variable">mobility_after_distancing</span> The social mobility index since March 16, 2020. Note that social distancing started at different times for different states, but we don't the include state-varied analysis in
-              this data.</li>
+            <li><span class="variable">mobility_after_distancing</span> The social mobility index since March 16, 2020. Note that social distancing started at different times for different states, but we don't the include state-varied analysis.</li>
             <li><span class="variable">reduction</span> The percent reduction of social mobility. This is computed as <br><span class="variable">1 - mobility_after_distancing / mobility_before_distancing</span>.</li>
-            <li><span class="variable">num_users</span> The number of unique Twitter users that were used to compute for this location.</li>
-            <li><span class="variable">num_records</span> The number of unique tweets used to compute for this location.</li>
+            <li><span class="variable">num_users</span> The number of unique Twitter users in this location that were used to compute the metric.</li>
+            <li><span class="variable">num_records</span> The number of unique Tweets in this location that were used to compute the metric.</li>
           </ul>
         </p>
 
-        <h3>Longitudinal Data with Weekly Measurements</h3>
+        <h2>Longitudinal Data with Weekly Measurements</h2>
         <p>This file contains the social mobility index for every location for each week starting in January 1, 2019.
           This data is available for every US state, 100 most populated cities, 5 regions
           (Northeast, Midwest, South, Central, West), and 2 territories (Puerto Rico and Virgin Islands).</p>
 
-        <h2>Social Distancing Data</h2>
-        <p>This dataset includes demographics (race/ethnicity, gender, and age), location, political affiliation, COVID19 and social distancing hashtag mentions
-        and weekly social mobility index for each anonymized Twitter user.
-          The details of this dataset can be found <a href="papers" target="_blank"> here </a>.</p>
+<!--        <h2>Social Distancing Data</h2>-->
+<!--        <p>This dataset includes demographics (race/ethnicity, gender, and age), location, political affiliation, COVID19 and social distancing hashtag mentions-->
+<!--        and weekly social mobility index for each anonymized Twitter user.-->
+<!--          The details of this dataset can be found <a href="papers" target="_blank"> here </a>.</p>-->
       </div>
 
       <div class="column2">
         <h4> Download </h4>
         <a href="https://preprints.jmir.org/preprint/21499/accepted" target="_blank">Social Mobility Index Paper</a>
         <a href="papers/Twitter_Detects_Who_is_Social_Distancing_During_COVID-19_preprint.pdf" target="_blank">Social Distancing Paper</a>
-        <a href="https://drive.google.com/file/d/1ppYNbrqVuxQe0BXj8AoMtbtnIEPdPS9F/view?usp=sharing" target="_blank">Social Distancing Data</a>
+<!--        <a href="https://drive.google.com/file/d/1ppYNbrqVuxQe0BXj8AoMtbtnIEPdPS9F/view?usp=sharing" target="_blank">Social Distancing Data</a>-->
         <button class="dropdown-btn">Latest Data - All
           <i class="fa fa-caret-down"></i>
         </button>
