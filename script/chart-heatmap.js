@@ -71,11 +71,11 @@ polygonTemplate.strokeWidth = 0.5;
 // Start info with US averages
 var info = document.getElementById("info");
 info.innerHTML = "<h3> United States Average </h3>";
-info.innerHTML += "Average mobility before 3/16: " + 65.58009974912021 + "km" +
-  "<br>" + "Average mobility after 3/16: " + 29.531047545190876 + "km" +
+info.innerHTML += "Average mobility before 3/16: " + 65.58 + "km" +
+  "<br>" + "Average mobility after 3/16: " + 29.53 + "km" +
   "<br>" + "Average reduction: " + 54.97 + "%" +
   "<br>" + "Median reduction: " + 84.95 + "%" +
-  "<br>" + "Number of Twitter users: " + 3898305;
+  "<br>" + "Number of Twitter users: 3,898,305";
 
 // Onclick for states, open its stats
 polygonTemplate.events.on("hit", function(ev) {
@@ -83,11 +83,11 @@ polygonTemplate.events.on("hit", function(ev) {
   var info = document.getElementById("info");
   info.innerHTML = "<h3>" + data.name + "<br>" + " (" + data.id + ")</h3>";
   if (data.id) {
-    info.innerHTML += "Average mobility before 3/16: " + data.mobility_before_distancing + "km" +
-      "<br>" + "Average mobility after 3/16: " + data.mobility_after_distancing + "km" +
+    info.innerHTML += "Average mobility before 3/16: " + data.mobility_before_distancing.toFixed(2) + "km" +
+      "<br>" + "Average mobility after 3/16: " + data.mobility_after_distancing.toFixed(2) + "km" +
       "<br>" + "Average reduction: " + data.value +
       "<br>" + "Median reduction: " + data.median_reduction +
-      "<br>" + "Number of Twitter users: " + data.num_users;
+      "<br>" + "Number of Twitter users: " + data.num_users.toLocaleString();
   } else {
     info.innerHTML += "<i>No description provided.</i>"
   }

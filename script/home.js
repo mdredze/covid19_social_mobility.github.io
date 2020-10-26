@@ -21,7 +21,7 @@ function dhm(t) {
   }
   return [d];
 }
-document.getElementById("datedisplay").innerHTML = dhm(diff) + " days since 3/16/2020, the start of social distancing on the national level.";
+document.getElementById("datedisplay").innerHTML = dhm(diff) + " days since the start of national social distancing in the United States (3/16/2020)";
 
 
 am4core.useTheme(am4themes_kelly);
