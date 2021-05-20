@@ -30,7 +30,7 @@ am4core.useTheme(am4themes_animated);
 var chart = am4core.create("chartdiv", am4charts.XYChart);
 
 // Set up data source
-chart.dataSource.url = "https://raw.githubusercontent.com/mdredze/covid19_twitter_data_new.github.io/master/data/home-index.json";
+chart.dataSource.url = "https://raw.githubusercontent.com/mdredze/covid19_social_mobility.github.io/master/data/home-index.json";
 chart.dataSource.parser = new am4core.JSONParser();
 chart.dataSource.parser.options.useColumnNames = true;
 
