@@ -35,7 +35,7 @@ polygonSeries.heatRules.push({
 polygonSeries.useGeodata = true;
 
 // Set up data source
-polygonSeries.dataSource.url = "https://raw.githubusercontent.com/mdredze/covid19_twitter_data_new.github.io/master/data/state-index.json";
+polygonSeries.dataSource.url = "https://raw.githubusercontent.com/mdredze/covid19_social_mobility.github.io/master/data/state-index.json";
 polygonSeries.dataSource.parser = new am4core.JSONParser();
 polygonSeries.dataSource.parser.options.useColumnNames = true;
 
